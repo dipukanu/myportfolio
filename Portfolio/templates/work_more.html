@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Work</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<script src="https://kit.fontawesome.com/a547a15dcc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerwork">
+        <div class="container">
+            <nav>
+                <a href="{%url 'home' %}"><img src="/static/logonew.png" class="logo"></a>
+
+                <ul id="sidemenu">
+                    <li> <a href="{%url 'home' %}">Home</a></li>
+                    <li> <a href="https://portfoliobydipu.herokuapp.com/portfolio/#about">About</a></li>
+                    <li> <a href="https://portfoliobydipu.herokuapp.com/portfolio/#services">Services</a></li>
+                    <li> <a href="https://portfoliobydipu.herokuapp.com/portfolio/#portfolio">Portfolio</a></li>
+                    <li> <a href="https://portfoliobydipu.herokuapp.com/portfolio/#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="/static/evm1.png">
+                            <div class="layer">
+                                <h3>Event Management App</h3>
+                                <p>This app will help you to book,  plan and organise promotional, business and social events.
+                                </p>
+                                <a href="https://weatherbydipu.herokuapp.com/event/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="work">
+                            <img src="/static/blog.png">
+                            <div class="layer">
+                                <h3>Blog App</h3>
+                                <p>This app will help you to explore new places and be informed about their history and location.
+                                </p>
+                                <a href="https://portfoliobydipu.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="work">
+                            <img src="/static/todo.png">
+                            <div class="layer">
+                                <h3>ToDo App</h3>
+                                <p>This app will help you to maintain your day-to-day tasks or list everything that you have to do.
+                                </p>
+                                <a href="https://weatherbydipu.herokuapp.com/todo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="work">
+                            <img src="/static/IDS.png">
+                            <div class="layer">
+                                <h3>Intrusion Detection System App</h3>
+                                <p>This app will help you to monitor network traffic for suspicious and malicious activity.
+                                </p>
+                                <a href="https://github.com/dipukanu/Flask-Intrusion-Detection-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="/static/weather.png">
+                            <div class="layer">
+                                <h3>Weather App</h3>
+                                <p>This app will inform you of the weather condition and temperature in your city </p>
+                                <a href="https://weatherbydipu.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © Dipu Kanu. Thanks for Visiting My Website!😊</p>
+            </div>
+
+            <script>
+                var sidemen = document.getElementById('sidemenu');
+                function openmenu(){
+                    sidemen.style.right = '0';
+                }
+                function closemenu(){
+                    sidemen.style.right = '-200px';
+                }
+            </script>
+    </body>
+</html>

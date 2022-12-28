@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dipu Kanu Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<script src="https://kit.fontawesome.com/a547a15dcc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="/static/logonew.png" class="logo"></a>
+
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, I'm</p>
+                <h1><span>Dipu Kanu</span> from Bangladesh</h1>
+                <p>Full stack developer</p>
+                <a href="#contact" class="btn btn2 btn3">Lets talk</a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/static/photo.jpg" alt="Dipu kanu Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <br>
+                    <p>I am a Full-stack web developer with a keen interest in Cyber security. I specialize in Django and have professional experience working with HTML, CSS, and JavaScript. I also have experience working with Bootstrap, REST API, and PostgreSQL.<br><br>
+                    I am socially adaptable and cooperative as I believe the collective effort is more productive than individual effort. I am ambitious and driven; I thrive on challenges and constantly set goals for myself, so I have something to strive towards.<br><br>
+                    As an upbeat, self-motivated team player with excellent communication,  I fantasize about an exciting future in the industry.</p>
+                    <br>
+                    <hr>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internships</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span><h1 class="skil-cls">Python development</h1></span>Develop web application using Python
+                            </li>
+                            <li>
+                                <span><h1 class="skil-cls">Backend development</h1></span>Develop backend web application using Django framework, & REST API
+                            </li>
+                            <li>
+                                <span><h1 class="skil-cls">Frontend development</h1></span>Develop frontend web application using HTML, CSS, JavaScript, & Bootstrap
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li>
+                                <span>Apr-Sep 2022</span><br><h4 class="int-head">Python development</h4>Omninos Solutions, Punjab, India
+                            </li>
+                            
+                            <li>
+                                <span>Jan-Mar 2022</span><br><h4 class="int-head">Cyber security internship</h4>Acmegrade, Karnataka, India  
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2018-2022</span><br><h4 class="int-head">B.Tech CSE</h4>Study abroad-Lovely Professional University, Punjab, India
+                            </li>
+                            
+                            <li>
+                                <span>2015-2017</span><br><h4 class="int-head">Higher secondary certificate</h4>Sreemangal govt. college, Moulvibazar, Bangladesh 
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------services------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python development</h2>
+                    <p>I provide the services related to Python development like python dynamic website development.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    
+                    <h2>Backend development</h2>
+                    <p>I provide the services related to backend development with the help of python django framework, & REST API.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Frontend development</h2>
+                    <p>I provide the services related to frontend development with the help of HTML, CSS, JavaScript, and Bootstrap.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<!-- --------------------portfolio------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/static/evm1.png">
+                    <div class="layer">
+                        <h3>Event Management App</h3>
+                        <p>This app will help you to book,  plan and organise promotional, business and social events.
+                        </p>
+                        <a href="https://weatherbydipu.herokuapp.com/event/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/static/blog.png">
+                    <div class="layer">
+                        <h3>Blog App</h3>
+                        <p>This app will help you to explore new places and be informed about their history and location.
+                        </p>
+                        <a href="https://portfoliobydipu.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/static/todo.png">
+                    <div class="layer">
+                        <h3>ToDo App</h3>
+                        <p>This app will help you to maintain your day-to-day tasks or list everything that you have to do.
+                        </p>
+                        <a href="https://weatherbydipu.herokuapp.com/todo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="{% url 'work'%}" class="btn">See more</a>
+        </div>
+    </div>
+
+
+<!-- --------------------contact------------------------ -->
+        
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dipukanu96@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> +880-1311449836</p>
+                    <p><i class="fa-solid fa-phone"></i> +880-1311449836</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/dipukanu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/dipukanu96" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.linkedin.com/in/dipu-kanu-8a1883195/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/dipukanu96/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/kanu_dipu" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/dk.dipu.10/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <a href="/static/Dipu_Kanu_CV.pdf" download class="download_cv">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form method='POST'>
+                        {% csrf_token %}
+                        {{form}}
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        {% for msg in messages %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>{{msg}}</strong>
+                        </div>
+                        {% endfor %}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dipu Kanu. Thanks for Visiting My Website!😊</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemen = document.getElementById('sidemenu');
+    function openmenu(){
+        sidemen.style.right = '0';
+    }
+    function closemenu(){
+        sidemen.style.right = '-200px';
+    }
+</script>
+
+<script>
+    var message_ele = document.getElementById("msg");
+    
+    setTimeout(function(){ 
+    message_ele.style.display = "none"; 
+    }, 3000);
+</script>
+
+
+</body>
+</html>
