@@ -117,7 +117,7 @@ USE_TZ = True
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-aa09'
+    'web-production-aa09.up.railway.app'
 ]
 
 # Static files (CSS, JavaScript, Images)
@@ -128,6 +128,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static'),
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
